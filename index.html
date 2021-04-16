@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="weather">
+        <div class="container">
+            <div class="weather__inner">
+                <div class="weather__top">
+                    <div class="weather__top-info">
+                        <div class="weather__top-city">
+                            <div class="weather__city-name"></div>
+                        </div>
+                        <div class="weather__top-units">
+                            <label for="cel">
+                                <input id="cel"  class="weather__top-input" type="radio" name="temperature" id="" checked>
+                                <span class="weather__top-slider">C</span>
+                            </label>
+                            <label for="far">
+                                <input  id="far"  class="weather__top-input" type="radio" name="temperature">
+                                <span class="weather__top-slider">F</span>
+                            </label>    
+                        </div>
+                    </div>
+                    <button class="weather__city-change weather__city-btn">Сменить город</button>
+                    <button class="weather__city-place weather__city-btn">Мое местоположение</button>
+                </div>
+                <div class="weather__info">
+                    <div class="weather__indicator">
+                        <img src="" alt="" class="weather__img">
+                        <div class="weather__indicator-num"></div>
+                    </div>
+                    <div class="weather__condition"></div>
+                </div>
+                <ul class="weather__list">
+                    <li class="weather__list-item">
+                        <div class="weather__item-title">Ветер</div>
+                        <div class="weather__item-info weather__item-info--wind"></div>
+                    </li>
+                    <li class="weather__list-item">
+                        <div class="weather__item-title">Давление</div>
+                        <div class="weather__item-info weather__item-info--pressure"> </div>
+                    </li>
+                    <li class="weather__list-item">
+                        <div class="weather__item-title ">Влажность</div>
+                        <div class="weather__item-info weather__item-info--humidity"></div>
+                    </li>
+                    <li class="weather__list-item">
+                        <div class="weather__item-title">Вероятность дождя</div>
+                        <div class="weather__item-info weather__item-info--rain"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
